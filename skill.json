@@ -1,0 +1,40 @@
+{
+  "name": "genpark-personal-subscription-zombie-killer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Personal recurring subscription auditor identifying dormant zombie services and recovering recurring annual spend.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "personal-finance",
+  "tags": [
+    "personal-agent",
+    "subscription-audit",
+    "personal-finance",
+    "cost-saving",
+    "zombie-subscriptions"
+  ],
+  "inputs": {
+    "user_name": {
+      "type": "string",
+      "default": "Marcus Vance"
+    },
+    "subscriptions": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "audit_id": {
+      "type": "string"
+    },
+    "monthly_recurring_bleed_usd": {
+      "type": "number"
+    },
+    "projected_annual_savings_usd": {
+      "type": "number"
+    },
+    "recommended_agent_action": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
